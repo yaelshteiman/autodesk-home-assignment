@@ -57,7 +57,7 @@ add `/health` to the address above. <br>
     ```
     * Run the docker:
    ``` sh
-     $ docker run -p <PORT> -it <your-docker-image>
+     $ docker run -p <PORT>:3000 -it <your-docker-image>
    ```
    `<Port>` can be any port number you like.
     * Use the service:
