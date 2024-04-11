@@ -2,9 +2,8 @@
 
 ## Overview
 
-An implemented Junior Home Assignment. </br>
-The task includes writing a simple service with two endpoints and deploy it to [[Heroku](https://www.heroku.com/)] </br>
-with a Docker container. </br>
+An implemented Junior Home Assignment for Autodesk. </br>
+The task includes writing a simple service with two endpoints and deploy it to [[Heroku](https://www.heroku.com/)] with a Docker container. </br>
 
 ## Service Details
 The service has 2 endpoints:
