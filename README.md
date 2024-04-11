@@ -34,7 +34,7 @@ add `/videos` to the address above. </br> In case of a failure - an Error will b
 2. Health service - </br>
 add `/health` to the address above. <br>
 <div align="center">
-<img src="https://i.ibb.co/q9y8jkz/health.png" alt="health">
+<img src="https://i.ibb.co/YR0hGK1/health.png" alt="health">
 <br/> an example of health-service endpoint usage
 </div>
 
