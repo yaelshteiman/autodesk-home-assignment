@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express')
-// const request = require('request');
 const os = require('os');
 const app = express()
 const PORT = process.env.PORT || 3000;
