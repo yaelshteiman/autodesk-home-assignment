@@ -60,13 +60,13 @@ add `/health` to the address above. <br>
      $ docker run -p 3000:3000 -it <your-docker-image>
    ```
     * Use the service:
-      * paste `http://localhost:<PORT>/videos` for the **videos service**.
-      * paste `http://localhost:<PORT>/health` for the **health service**.
+      * paste `http://localhost:3000/videos` for the **videos service**.
+      * paste `http://localhost:PORT/health` for the **health service**.
     * Stop the docker: </br> use the command:
    ```sh
     $ docker ps 
    ```
-   copy your Docker's <_CONTAINER ID_>. </br> Run the following command:
+   copy your Docker's `CONTAINER ID `. </br> Run the following command:
     ```sh
-    $ docker stop <_CONTAINER_ID_>
+    $ docker stop <CONTAINER ID >
     ```
