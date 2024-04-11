@@ -8,7 +8,7 @@ The task includes writing a simple service with two endpoints and deploy it to [
 ## Service Details
 The service has 2 endpoints:
 1.  **Video Endpoint** (GET / videos): </br>
-    Get a list of 10 videos with Autodesk from YouTube api with confirmation details: title, length, views.</br> 'Topic' set to Autodesk.
+    Get a list of 10 videos with Autodesk from YouTube API with confirmation details: title, length, views.</br> 'Topic' set to Autodesk.
 2. **Health Endpoint** (GET / health): </br>
    This endpoint should return a health check of your service with the following data: </br>
 OS name, Language/platform version, Memory usage of your machine (Percentage value) and CPU usage of your machine (Percentage value).
@@ -19,7 +19,7 @@ Click the link or copy the address below:
 ```sh
    https://autodesk-assignment-e0c7cdb33351.herokuapp.com/
    ```
-you will see `Cannot Get /` message on your browser, due to the fact the `/` is not define as an endpoint of the service.
+You will see `Cannot Get /` message on your browser, due to the fact the `/` is not define as an endpoint of the service.
 
 ## Usage
 1. YouTube API videos service - </br>
@@ -39,14 +39,14 @@ add `/health` to the address above. <br>
 ## Run the service locally with a Docker
 ### Prerequisites
 1. **NodeJS** - Make sure you have NodeJS installed.
-2. **YouTubeAPI** -
+2. **YouTube API** -
    * Create a Google Cloud Platform (GCP) project.
    * Enable the YouTube Data API v3.
    * Create API key
 3. **Docker** - Install Docker.
 
 ### Usage
-1. Download the Code directory. </br> Open your terminal and navigate to the project directory
+1. Download the Code directory. </br> Open your terminal and navigate to the project directory.
 2. Paste your API key to `.env` file and save it.
 3. Docker -
    * Build the docker: </br>
