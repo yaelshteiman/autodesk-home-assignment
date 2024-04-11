@@ -1,4 +1,4 @@
-# Junior Home Assignment
+# Yael Shteiman - Junior Home Assignment
 
 ## Overview
 
@@ -19,12 +19,11 @@ Click the link or copy the address below:
 ```sh
    https://autodesk-assignment-e0c7cdb33351.herokuapp.com/
    ```
-you will see `Cannot Get /` message on your browser, </br>
-due to the fact the `/` is not define as an endpoint of the service.
+you will see `Cannot Get /` message on your browser, due to the fact the `/` is not define as an endpoint of the service.
 
 ## Usage
 1. YouTube API videos service - </br>
-add `/videos` to the address above. </br> In case of a failure - an Error will be returned.
+add `/videos` to the address above. </br> In case of a failure - an error will be returned.
 <div align="center">
 <img src="https://i.ibb.co/zGL3p6x/videos.png" alt="videos">
 <br/> an example of one video-service endpoint usage
@@ -47,7 +46,7 @@ add `/health` to the address above. <br>
 3. **Docker** - Install Docker.
 
 ### Usage
-1. Download the Code directory. </br> Open your terminal and change to the folder.
+1. Download the Code directory. </br> Open your terminal and navigate to the project directory
 2. Paste your API key to `.env` file and save it.
 3. Docker -
    * Build the docker: </br>
@@ -60,7 +59,7 @@ add `/health` to the address above. <br>
    ```
     * Use the service:
       * paste `http://localhost:3000/videos` for the **videos service**.
-      * paste `http://localhost:PORT/health` for the **health service**.
+      * paste `http://localhost:3000/health` for the **health service**.
     * Stop the docker: </br> use the command:
    ```sh
     $ docker ps 
