@@ -55,11 +55,10 @@ add `/health` to the address above. <br>
     ```sh
        $ docker build . -t <your-docker-image>
     ```
-    * Run the docker:
+    * Run the docker on port 3000:
    ``` sh
-     $ docker run -p <PORT>:3000 -it <your-docker-image>
+     $ docker run -p 3000:3000 -it <your-docker-image>
    ```
-   `<Port>` can be any port number you like.
     * Use the service:
       * paste `http://localhost:<PORT>/videos` for the **videos service**.
       * paste `http://localhost:<PORT>/health` for the **health service**.
