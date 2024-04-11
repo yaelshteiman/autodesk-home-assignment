@@ -1,10 +1,10 @@
 require('dotenv').config();
-
 const express = require('express')
-const {response} = require("express");
+// const {response} = require("express");
 const request = require('request');
 const os = require('os');
 const app = express()
+const PORT = process.env.PORT || 3000;
 
 // endpoints
 // GET request to YouTube API
@@ -66,19 +66,17 @@ app.get('/health', (req, res) => {
 
     const healthData = {
         os: process.platform,
-        nodeVersion: process.version,
-        memoryUsage: memoryUsagePercentage.toFixed(2) + '%',
-        cpuUsage: cpuUsagePercentage.toFixed(2) + '%'
+        nodeVersion: process.versions.node,
+        memoryUsage: `${memoryUsagePercentage.toFixed(2)} %`,
+        cpuUsage: `${cpuUsagePercentage.toFixed(2)} %`
     };
     res.json(healthData);
 })
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`App is listening at http://localhost: ${PORT}`);
 });
 
-
-//<your-app-name> autodesk-assignment
-// <your-docker-image> docker-autodesk
-// yaelshteiman/service/autodesk-assignment
+app.all('/*', (req, res) => {
+    res.status(404).send({ 'message': 'You should go to /videos or /health' });
+});
