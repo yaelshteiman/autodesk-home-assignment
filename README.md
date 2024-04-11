@@ -15,7 +15,7 @@ The service has 2 endpoints:
 OS name, Language/platform version, Memory usage of your machine (Percentage value) and CPU usage of your machine (Percentage value).
 
 ## Run The Service using Heroku
-The service is hosted [[[here](https://autodesk-assignment-e0c7cdb33351.herokuapp.com/)]].
+The service is hosted [here](https://autodesk-assignment-e0c7cdb33351.herokuapp.com/).
 Click the link or copy the address below:
 ```sh
    https://autodesk-assignment-e0c7cdb33351.herokuapp.com/
@@ -29,8 +29,9 @@ add `/videos` to the address above. </br> In case of a failure - an Error will b
 <div align="center">
 <img src="https://i.ibb.co/zGL3p6x/videos.png" alt="videos">
 <br/> an example of one video-service endpoint usage
-</div>
-2. Health service - <br>
+</div>  
+
+2. Health service - </br>
 add `/health` to the address above. <br>
 <div align="center">
 <img src="https://i.ibb.co/q9y8jkz/health.png" alt="health">
@@ -52,11 +53,11 @@ add `/health` to the address above. <br>
 3. Docker -
    * Build the docker: </br>
     ```sh
-       $ docker build . -t <your-docker-image> --platform /linux/amd64 .
+       $ docker build . -t <your-docker-image>
     ```
     * Run the docker:
    ``` sh
-     $ docker run -dp <PORT>:3000 <your-docker-image>
+     $ docker run -p <PORT> -it <your-docker-image>
    ```
    `<Port>` can be any port number you like.
     * Use the service:
